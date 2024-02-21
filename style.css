@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --PaleBlue: hsl(243, 100%, 93%);
+  --GrayishBlue: hsl(229, 7%, 55%);
+  --DarkBlue: hsl(228, 56%, 26%);
+  --VeryDarkBlue: hsl(229, 57%, 11%);
+}
+p {
+  font-size: 14px;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background: url(./images/bg-desktop.png), var(--VeryDarkBlue);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+  color: aliceblue;
+}
+.container main {
+  gap: 1rem;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container main .navigation {
+  width: 25%;
+  background-color: var(--DarkBlue);
+  border-radius: 10px 100px 10px 10px;
+  padding-block: 2rem;
+  padding-left: 2rem;
+}
+.fylo-logo {
+  padding-bottom: 1rem;
+}
+.navigation-bar .nav-item {
+  background-color: var(--VeryDarkBlue);
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.container main .data-bar {
+  width: 45%;
+  background-color: var(--DarkBlue);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.data-bar {
+  position: relative;
+}
+.pop-up {
+  position: absolute;
+  background-color: white;
+  color: #333;
+  right: 20%;
+  top: 40%;
+  padding: 10px;
+  border-radius: 5px;
+}
+.pop-up span {
+  font-weight: bolder;
+  font-size: 1.7rem;
+  padding-right: 5px;
+}
+.text p {
+  color: var(--PaleBlue);
+  padding-top: 12%;
+  margin-left: -65%;
+}
+.text span {
+  font-weight: bolder;
+}
+.bar {
+  background-color: var(--VeryDarkBlue);
+  width: 90%;
+  border-radius: 20px;
+  padding: 1.2%;
+  margin-top: 3%;
+}
+.bar .inside-bar {
+  border-radius: 20px;
+  width: 80%;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  display: flex;
+  justify-content: flex-end;
+}
+.bar .inside-bar .ball {
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.limit {
+  display: flex;
+  justify-content: space-between;
+  width: 88%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  color: var(--PaleBlue);
+}
+@media screen and (max-width: 375px) {
+  body {
+    background: url(./images/bg-mobile.png), var(--VeryDarkBlue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .container main {
+    display: flex;
+    flex-direction: column;
+  }
+  .container main .navigation {
+    width: 90%;
+    background-color: var(--DarkBlue);
+    border-radius: 10px 100px 10px 10px;
+  }
+  .container main .data-bar {
+    width: 90%;
+    padding-bottom: 20px;
+  }
+  .data-bar {
+    position: relative;
+  }
+  .pop-up {
+    position: absolute;
+    right: 30%;
+    top: 75%;
+    padding: 14px;
+    border-radius: 5px;
+  }
+  .pop-up span {
+    font-size: 2rem;
+  }
+  .text p {
+    color: var(--PaleBlue);
+    padding-top: 12%;
+    padding-bottom: 10px;
+    margin-inline: 5px;
+  }
+  .bar {
+    padding: 1.5%;
+    margin-top: 3%;
+  }
+}

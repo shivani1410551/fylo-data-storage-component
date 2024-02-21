@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <section class="navigation">
+          <img src="./images/logo.svg" alt="fylo-logo" class="fylo-logo" />
+          <nav class="navigation-bar">
+            <button class="nav-item" id="document">
+              <img src="./images/icon-document.svg" alt="document" />
+            </button>
+            <button class="nav-item" id="folder">
+              <img src="./images/icon-folder.svg" alt="folder" />
+            </button>
+            <button class="nav-item" id="upload">
+              <img src="./images/icon-upload.svg" alt="upload" />
+            </button>
+          </nav>
+        </section>
+        <section class="data-bar">
+          <div class="text">
+            <p>You’ve used <span>815 GB</span> of your storage</p>
+          </div>
+          <div class="bar">
+            <div class="inside-bar">
+              <div class="ball"></div>
+            </div>
+          </div>
+          <div class="limit">
+            <p>0 GB</p>
+            <p>1000 GB</p>
+          </div>
+        </section>
+        <div class="pop-up">
+          <p><span>185</span> GB Left</p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
